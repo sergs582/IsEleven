@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		87758F4823FE8D1200935EC0 /* IsEleven.h in Headers */ = {isa = PBXBuildFile; fileRef = 87758F4623FE8D1200935EC0 /* IsEleven.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87758F4F23FE8F5400935EC0 /* IsEleven.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87758F4E23FE8F5400935EC0 /* IsEleven.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87758F4323FE8D1200935EC0 /* IsEleven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsEleven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87758F4623FE8D1200935EC0 /* IsEleven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsEleven.h; sourceTree = "<group>"; };
 		87758F4723FE8D1200935EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87758F4E23FE8F5400935EC0 /* IsEleven.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsEleven.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				87758F4623FE8D1200935EC0 /* IsEleven.h */,
 				87758F4723FE8D1200935EC0 /* Info.plist */,
+				87758F4E23FE8F5400935EC0 /* IsEleven.swift */,
 			);
 			path = IsEleven;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					87758F4223FE8D1200935EC0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87758F4F23FE8F5400935EC0 /* IsEleven.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		87758F4C23FE8D1200935EC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscourse.IsEleven;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		87758F4D23FE8D1200935EC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
