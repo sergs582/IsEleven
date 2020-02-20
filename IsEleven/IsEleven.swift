@@ -10,14 +10,14 @@ import Foundation
 
 open class IsEleven {
     
-   public func checkData(data: Int) -> Bool {
+   public static func checkData(data: Int) -> Bool {
         return data == 11
     }
     
-    public func checkData(data: String) -> Bool {
+    public static func checkData(data: String) -> Bool {
         var result = false
         switch data.lowercased() {
-            case "eleven", "11", "одиннадцать", "||" :
+        case "eleven", "11", "одиннадцать", "||", "23:00" :
                 result = true
             default: result = false
         }
