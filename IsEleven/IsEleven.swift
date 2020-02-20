@@ -8,14 +8,21 @@
 
 import Foundation
 
-public final class IsEleven {
+open class IsEleven {
     
-    func checkData(data: Int) -> Bool {
+   public func checkData(data: Int) -> Bool {
         return data == 11
     }
     
-    func checkData(data: String) -> Bool {
-        return Int(data) == 11
+    public func checkData(data: String) -> Bool {
+        var result = false
+        switch data.lowercased() {
+            case "eleven", "11", "одиннадцать", "||" :
+                result = true
+            default: result = false
+        }
+        
+        return result
     }
     
 }
