@@ -13,7 +13,7 @@ This CocoaPods library checks if given data equals eleven
 
   spec.platform     = :ios, "11.0"
 
-  spec.source       = { :git => "https://github.com/sergs582/IsEleven", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/sergs582/IsEleven.git", :tag => "#{spec.version}" }
 
   spec.source_files  = "IsEleven/**/*.{h,m}"
 
