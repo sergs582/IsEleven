@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "IsEleven"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Check if data equals eleven"
   spec.description  = <<-DESC
 This CocoaPods library checks if given data equals eleven
